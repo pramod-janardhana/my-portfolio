@@ -1,0 +1,109 @@
+#experience-head {
+  padding: 40px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background: url("../drawables/experience/background.svg") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#experience-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 210px;
+  color: #ffffff;
+}
+
+#experience-body {
+  padding: 40px;
+}
+
+/*INTERNSHIP SECTION*/
+#internship-body {
+  flex-direction: row;
+}
+
+#internships {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/*FULLTIME SECTION*/
+#full-time-body {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+  #experience-title {
+    font-size: 110px;
+  }
+
+  #side-image {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #experience-head {
+    padding: 10px;
+    height: 190px;
+  }
+
+  #experience-title {
+    font-size: 82px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #experience-body {
+    padding: 4vw;
+  }
+
+  #experience-head {
+    padding: 10px;
+    height: 142px;
+  }
+
+  #experience-title {
+    font-size: 52px;
+    line-height: 90px;
+  }
+
+  #internships {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #side-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #experience-body {
+    padding: 4vw;
+  }
+
+  #experience-head {
+    padding: 10px;
+    height: 106px;
+  }
+
+  #experience-title {
+    font-size: 44px;
+    line-height: 68px;
+  }
+
+  #internships {
+    margin: 10px 0;
+  }
+}

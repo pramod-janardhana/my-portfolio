@@ -1,0 +1,96 @@
+#certifications-head {
+  padding: 40px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background: url("../drawables/certifications/background.svg") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#certifications-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 210px;
+  color: #ffffff;
+}
+
+#certifications-body {
+  padding: 40px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1150px) {
+  #certifications-title {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #certifications-head {
+    padding: 10px;
+    height: 190px;
+  }
+
+  #certifications-title {
+    font-size: 82px;
+  }
+
+  #certifications-body {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #certifications-head {
+    padding: 10px;
+    height: 142px;
+  }
+
+  #certifications-title {
+    font-size: 52px;
+    line-height: 90px;
+  }
+
+  #certifications-body {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #certifications-head {
+    padding: 10px;
+    height: 106px;
+  }
+
+  #certifications-title {
+    font-size: 44px;
+    line-height: 68px;
+  }
+
+  #certifications-body {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #certifications-title {
+    font-size: 34px;
+    line-height: 68px;
+  }
+
+  #certifications-body {
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

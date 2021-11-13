@@ -1,0 +1,39 @@
+#footer-signature {
+    padding: 40px 40px 0px 40px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.18em;
+    color: #000000;
+}
+
+#footer-signature span a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 300;
+}
+
+#footer-signature span a:hover {
+    cursor: pointer;
+    color: #FF0000;
+}
+
+@media screen and (max-width: 950px) {
+
+    #footer-signature {
+        padding: 3vw 3vw 0px 3vw;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #footer-signature {
+        padding: 3vw 3vw 0px 3vw;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

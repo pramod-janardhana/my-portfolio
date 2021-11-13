@@ -1,0 +1,163 @@
+#about-section {
+  flex-direction: row;
+  height: 560px;
+  padding: 3vw;
+  margin-top: 60px; /*BECAUSE OF FIXED TOP-NAV-BAR*/
+}
+
+#my-details {
+  padding-left: 3vw; /* 40px */
+}
+
+#profile-picture {
+  height: 80%;
+}
+
+#name,
+#email,
+#role {
+  font-style: normal;
+  letter-spacing: 0.18em;
+}
+
+#name {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 64px;
+}
+
+#email {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+#role {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+#role span a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+#role span a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  #about-section {
+    height: 460px;
+    padding: 3vw;
+  }
+
+  #name,
+  #email,
+  #role {
+    letter-spacing: 0.18em;
+  }
+
+  #name {
+    font-size: 35px;
+    line-height: 54px;
+  }
+
+  #email {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  #role {
+    font-size: 27px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #about-section {
+    height: 360px;
+    padding: 3vw;
+  }
+
+  #name,
+  #email,
+  #role {
+    letter-spacing: 0.18em;
+  }
+
+  #name {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  #email {
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  #role {
+    font-size: 20px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #about-section {
+    flex-direction: column;
+    height: 360px;
+    padding: 3vw;
+  }
+
+  #my-details {
+    align-items: center;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  #name,
+  #email,
+  #role {
+    text-align: center;
+    letter-spacing: 0.18em;
+  }
+
+  #name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #email {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  #role {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  #email {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  #role {
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}

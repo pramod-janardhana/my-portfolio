@@ -1,0 +1,111 @@
+#skills-head {
+  padding: 40px;
+  height: 250px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../drawables/skills/background.svg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+#skills-title,
+#skills-sub-title {
+  font-style: normal;
+  color: #ffffff;
+}
+
+#skills-title {
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 210px;
+}
+
+#skills-sub-title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+#skills-body {
+  padding: 40px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+  #skills-title {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #skills-body {
+    padding: 4vw;
+  }
+
+  #skills-head {
+    padding: 10px;
+    height: 190px;
+  }
+
+  #skills-title {
+    font-size: 82px;
+    line-height: 120px;
+  }
+
+  #skills-sub-title {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #skills-body {
+    padding: 4vw;
+  }
+
+  #skills-head {
+    padding: 10px;
+    height: 142px;
+  }
+
+  #skills-title {
+    font-size: 52px;
+    line-height: 90px;
+  }
+
+  #skills-sub-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #skills-body {
+    padding: 4vw;
+  }
+
+  #skills-head {
+    padding: 10px;
+    height: 106px;
+  }
+
+  #skills-title {
+    font-size: 44px;
+    line-height: 68px;
+  }
+
+  #skills-sub-title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

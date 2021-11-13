@@ -1,0 +1,37 @@
+.experience-section-header {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.experience-section-header-title {
+    padding: 0 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 58px;
+    line-height: 68px;
+    color: #B15367;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+@media screen and (max-width: 1150px) {
+    .experience-section-header-title {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .experience-section-header-title {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-section-header-title {
+        font-size: 28px;
+    }
+}

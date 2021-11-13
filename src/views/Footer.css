@@ -1,0 +1,12 @@
+#footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw;
+}
+
+hr {
+  height: 1px;
+  background-color: #a3a3a3;
+  border: 0;
+}

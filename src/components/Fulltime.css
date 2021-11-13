@@ -1,0 +1,80 @@
+.fulltime {
+  padding: 20px;
+  margin-top: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fulltime-details {
+  padding-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fulltime-company-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  color: #217c9d;
+}
+
+.role-at-fulltime,
+.fulltime-duration {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.fulltime-item-dividor {
+  height: 1px;
+  background-color: #928b8b;
+  border: 0;
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 950px) {
+  .fulltime {
+    margin-top: 3vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .fulltime {
+    margin-top: 0;
+    padding: 2vw;
+  }
+
+  .fulltime-company-logo {
+    display: none;
+  }
+
+  .fulltime-details {
+    padding-left: 0px;
+  }
+
+  .fulltime-company-name,
+  .role-at-fulltime,
+  .fulltime-duration {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fulltime {
+    margin-top: 0;
+    padding: 2vw;
+  }
+
+  .fulltime-company-name,
+  .role-at-fulltime,
+  .fulltime-duration {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
