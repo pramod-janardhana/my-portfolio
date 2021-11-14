@@ -47,7 +47,7 @@
   }
 
   #side-image {
-    width: 60%;
+    width: 40vw;
   }
 }
 
@@ -59,6 +59,10 @@
 
   #experience-title {
     font-size: 82px;
+  }
+
+  #side-image {
+    width: 38vw;
   }
 }
 
@@ -79,6 +83,10 @@
 
   #internships {
     margin: 10px 0;
+  }
+
+  #side-image {
+    width: 34vw;
   }
 }
 
