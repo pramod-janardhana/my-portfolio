@@ -2,56 +2,65 @@ import React, { useState, useEffect } from "react";
 import LoadingScreen from "react-loading-screen";
 import firebaseDB from "../firebase";
 import profile from "../drawables/about/profile.svg";
+import code from "../drawables/about/code.svg";
+import github from "../drawables/about/github.svg";
+import linkedin from "../drawables/about/linkedin.svg";
 import "./About.css";
-import { Flex } from "@chakra-ui/layout";
+import { Box, Flex } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/image";
 
 function About() {
   const [loading, setLoading] = useState(true);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [role, setRole] = useState("");
-  const [company, setCompany] = useState("");
+  const name = "Pramod Janardhana";
+  const role = "Full Stack Developer";
+  const company = "Betsol";
 
-  useEffect(() => {
-    firebaseDB.child("about").on("value", (snapshot) => {
-      const result = snapshot.val();
-      if (result != null) {
-        //console.log(result.name);
-
-        setName(result.name);
-        setEmail(result.email);
-        setRole(result.work.role);
-        setCompany(result.work.company);
-        setLoading(false); // set loading to false
-      }
-    });
-  }, []);
+  const socialLinks = [
+    { src: linkedin, alt: "linkedIn" },
+    { src: github, alt: "github" },
+    { src: code, alt: "code" },
+  ];
 
   return (
-    // <LoadingScreen
-    // 	loading={loading}
-    // 	bgColor='#f1f1f1'
-    // 	spinnerColor='#1765cc'
-    // 	logoSrc={profile}
-    // >
-    <Flex id="about-section" justifyContent="center" alignItems="center">
-      <img src={profile} id="profile-picture" alt="profile" />
-      <Flex id="my-details" justifyContent="flex-start" flexDirection="column">
-        <div>
-          <div id="name">{name}</div>
-          <div id="email">{email}</div>
-        </div>
-        <div id="role">
-          {role} AT <br />
-          <span>
-            <a href="https://www.betsol.com/" target="_blank">
-              {company}
-            </a>
-          </span>
-        </div>
+    <Flex id="about-section">
+      <Flex>
+        <Image
+          src={profile}
+          height="458px"
+          width="378px"
+          objectFit="cover"
+          alt="Pramod J"
+        />
+        <Flex id="my-details">
+          <div>
+            <p id="name">{name}</p>
+            <p id="role">
+              {role} AT <br />
+              <span>
+                <a href="https://www.betsol.com/" target="_blank">
+                  {company}
+                </a>
+              </span>
+            </p>
+          </div>
+          <Flex id="social-links-wrapper">
+            <Flex id="social-links">
+              {socialLinks.map((item) => (
+                <Image
+                  className="icon"
+                  src={item.src}
+                  boxSize="32px"
+                  alt={item.alt}
+                />
+              ))}
+            </Flex>
+            <Flex id="quote">
+              <p>Every programmer is an author!</p>
+            </Flex>
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
-    //</LoadingScreen>
   );
 }
 
