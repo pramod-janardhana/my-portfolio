@@ -19,7 +19,7 @@ const TopNavBar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Flex id="top-nav" justifyContent="space-between">
+    <Flex id="top-nav">
       <Link
         id="logo"
         activeClass="active"
@@ -32,9 +32,9 @@ const TopNavBar = () => {
           if (isOpen) onToggle();
         }}
       >
-        PRAMOD J
+        Pramod
       </Link>
-      <Box id="horizontal-menu" mr="4vw">
+      <Box id="horizontal-menu">
         {NavItems.map((item) => (
           <Link
             className="top-nav-link"

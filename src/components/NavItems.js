@@ -9,22 +9,22 @@ const smoothScrollOptions = {
 const NavItems = [
   {
     to: "skills-head",
-    text: "SKILLS",
+    text: "Skills",
     ...smoothScrollOptions,
   },
   {
     to: "experience-head",
-    text: "EXPERIENCE",
+    text: "Experince",
     ...smoothScrollOptions,
   },
   {
     to: "certifications-head",
-    text: "PROJECTS",
+    text: "Projects",
     ...smoothScrollOptions,
   },
   {
     to: "certifications-head",
-    text: "CERTIFICATIONS",
+    text: "Certificates",
     ...smoothScrollOptions,
   },
 ];
