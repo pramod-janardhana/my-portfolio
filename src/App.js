@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import TopNavBar from "./components/TopNavBar";
 import About from "./views/About";
-import Skills from "./views/Skills";
+import Skills from "./views/Skills/skills";
 import Experience from "./views/Experience";
 import Certifications from "./views/Certifications";
 import Footer from "./views/Footer";

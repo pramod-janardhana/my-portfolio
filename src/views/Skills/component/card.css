@@ -1,23 +1,30 @@
 .skill {
-  flex-grow: 1;
-  flex-direction: row;
+  /* flex-grow: 1; */
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   background-color: #ffffff;
-  border: 4px solid #200447;
-  border-radius: 8px;
-  width: 24%;
-  padding: 20px;
-  margin: 40px;
+  /* border: 4px solid #200447; */
+  /* border-radius: 8px; */
+  width: 100%;
+  padding: 1.2vw;
+  /* margin: 40px; */
+}
+
+.group {
+  font-family: "Special Elite";
+  line-height: 1.4em;
+  font-size: 86px;
 }
 
 .my-skill {
   font-style: normal;
   font-weight: 300;
-  font-size: 46px;
-  line-height: 59px;
-  letter-spacing: 0.18em;
-  color: #200447;
+  font-size: 32px;
+  font-family: "Courgette";
+  line-height: 40px;
+  /* letter-spacing: 0.18em; */
+  color: #000000;
   padding-left: 20px;
 }
 

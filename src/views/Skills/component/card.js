@@ -1,0 +1,33 @@
+import React from "react";
+import { Flex, Box } from "@chakra-ui/layout";
+import { Grid, GridItem } from "@chakra-ui/react";
+import colors from "../consts.js";
+import "./card.css";
+
+const Card = ({ title, skills }) => {
+  return (
+    <Flex className="skill">
+      <Box className="group" color={colors.blue}>
+        {title}
+      </Box>
+      <Grid
+        templateRows="repeat(2, 1fr)"
+        templateColumns="repeat(2, 1fr)"
+        gap={4}
+      >
+        {skills.map((skill) => (
+          <GridItem
+            bg={colors.white}
+            fontFamily="Courgette"
+            fontSize="32px"
+            lineHeight="40px"
+          >
+            {skill}
+          </GridItem>
+        ))}
+      </Grid>
+    </Flex>
+  );
+};
+
+export default Card;

@@ -1,10 +1,11 @@
 #certifications-head {
   padding: 40px;
-  height: 250px;
+  /* height: 250px; */
   justify-content: center;
   align-items: center;
-  background: url("../drawables/certifications/background.svg") no-repeat center
-    center fixed;
+  background-color:#000000;
+  /* background: url("../drawables/certifications/background.svg") no-repeat center
+    center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,9 +13,9 @@
 }
 
 #certifications-title {
+  font-family: Monoton;
   font-style: normal;
-  font-weight: bold;
-  font-size: 130px;
+  font-size: 140px;
   line-height: 210px;
   color: #ffffff;
 }
