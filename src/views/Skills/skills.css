@@ -1,11 +1,12 @@
 #skills-head {
   padding: 40px;
-  height: 250px;
+  margin: 1.2vw 0 1.2vw 0;
+  /* height: 250px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../drawables/skills/background.svg") no-repeat center center
-    fixed;
+  background: url("../../drawables/skills/background.svg") no-repeat center
+    center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,19 +21,20 @@
 }
 
 #skills-title {
-  font-weight: bold;
-  font-size: 130px;
+  font-family: Monoton;
+  font-size: 140px;
   line-height: 210px;
 }
 
 #skills-sub-title {
+  font-family: Roboto;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 38px;
   line-height: 45px;
 }
 
 #skills-body {
-  padding: 40px;
+  padding: 1.2vw;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;

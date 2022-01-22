@@ -1,6 +1,6 @@
 #experience-head {
   padding: 40px;
-  height: 250px;
+  /* height: 250px; */
   justify-content: center;
   align-items: center;
   background: url("../drawables/experience/background.svg") no-repeat center
@@ -13,8 +13,8 @@
 
 #experience-title {
   font-style: normal;
-  font-weight: bold;
-  font-size: 130px;
+  font-family: Monoton;
+  font-size: 140px;
   line-height: 210px;
   color: #ffffff;
 }
