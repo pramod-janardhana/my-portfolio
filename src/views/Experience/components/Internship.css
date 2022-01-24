@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: #f2e2e2;
+  /* background-color: #f2e2e2; */
 }
 
 .internship-details {
@@ -17,7 +17,7 @@
   font-weight: bold;
   font-size: 32px;
   line-height: 37px;
-  color: #217c9d;
+  /* color: #217c9d; */
 }
 
 .role-at-internship,
@@ -26,7 +26,7 @@
   font-weight: 200;
   font-size: 32px;
   line-height: 37px;
-  color: #000000;
+  /* color: #000000; */
 }
 
 @media screen and (max-width: 1150px) {

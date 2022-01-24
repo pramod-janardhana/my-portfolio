@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Flex } from "@chakra-ui/react";
-import firebaseDB, { storage } from "../firebase";
-import ExperienceSectionHeader from "../components/ExperienceSectionHeader";
-import Internship from "../components/Internship";
-import Fulltime from "../components/Fulltime";
-import sideImage from "../drawables/experience/side-image.svg";
-import "./Experience.css";
+import { Flex, Box } from "@chakra-ui/react";
+import firebaseDB, { storage } from "../../firebase";
+import ExperienceSectionHeader from "./components/ExperienceSectionHeader";
+import Internship from "./components/Internship";
+import Fulltime from "./components/Fulltime";
+import sideImage from "../../drawables/experience/side-image.svg";
+import colors from "./consts";
+import "./experience.css";
 
 function Experience() {
   const [internships, setInternships] = useState([]);
@@ -25,9 +26,9 @@ function Experience() {
     });
   }, []);
   const myInternships = [
-    // <Internship internship={internships[0]} />,
-    // <Internship internship={internships[0]} />,
-    // <Internship internship={internships[0]} />,
+    <Internship internship={internships[0]} />,
+    <Internship internship={internships[0]} />,
+    <Internship internship={internships[0]} />,
   ];
 
   return (
@@ -35,12 +36,17 @@ function Experience() {
       <Flex id="experience-head">
         <div id="experience-title">EXPERIENCE</div>
       </Flex>
-      <div id="experience-body">
+      <Box id="experience-body" bg={colors.lightPurpul}>
         <div>
           <ExperienceSectionHeader title="INTERNSHIP" />
           <Flex id="internship-body">
             <img src={sideImage} id="side-image" />
             <Flex id="internships">{myInternships}</Flex>
+            {/* <Flex id="internships">
+              {internships.map((internship) => (
+                <Internship internship={internship} />
+              ))}
+            </Flex> */}
           </Flex>
         </div>
         <div>
@@ -49,7 +55,7 @@ function Experience() {
             <Fulltime />
           </Flex>
         </div>
-      </div>
+      </Box>
     </>
   );
 }

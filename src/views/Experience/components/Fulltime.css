@@ -1,23 +1,24 @@
 .fulltime {
-  padding: 20px;
-  margin-top: 40px;
+  /* padding: 20px; */
+  /* margin-top: 40px; */
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .fulltime-details {
-  padding-left: 20px;
+  padding: 2.4vw;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 32px;
 }
 
 .fulltime-company-name {
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 37px;
-  color: #217c9d;
+  font-size: 36px;
+  /* line-height: 37px; */
+  /* color: #217c9d; */
 }
 
 .role-at-fulltime,
@@ -25,8 +26,8 @@
   font-style: normal;
   font-weight: 200;
   font-size: 32px;
-  line-height: 37px;
-  color: #000000;
+  /* line-height: 37px; */
+  /* color: #000000; */
 }
 
 .fulltime-item-dividor {

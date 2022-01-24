@@ -2,6 +2,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+  padding: 2.4vw 0 2.4vw 0;
 }
 
 .experience-section-header-title {
@@ -10,7 +11,8 @@
   font-weight: 200;
   font-size: 58px;
   line-height: 68px;
-  color: #b15367;
+  color: #ffffff;
+  font-family: "Kaushan Script";
 }
 
 hr {

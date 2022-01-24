@@ -1,9 +1,10 @@
 #experience-head {
   padding: 40px;
+  margin: 1.2vw 0 1.2vw 0;
   /* height: 250px; */
   justify-content: center;
   align-items: center;
-  background: url("../drawables/experience/background.svg") no-repeat center
+  background: url("../../drawables/experience/background.svg") no-repeat center
     center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,13 +15,13 @@
 #experience-title {
   font-style: normal;
   font-family: Monoton;
-  font-size: 140px;
+  font-size: 110px;
   line-height: 210px;
   color: #ffffff;
 }
 
 #experience-body {
-  padding: 40px;
+  padding: 0 2.4vw 0 2.4vw;
 }
 
 /*INTERNSHIP SECTION*/
