@@ -3,7 +3,7 @@ import TopNavBar from "./components/TopNavBar";
 import About from "./views/About";
 import Skills from "./views/Skills/skills";
 import Experience from "./views/Experience/experience";
-import Certifications from "./views/Certifications";
+import Certifications from "./views/Certifications/certifications";
 import Footer from "./views/Footer";
 import "./App.css";
 

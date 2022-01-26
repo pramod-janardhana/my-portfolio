@@ -14,26 +14,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 1.2vw;
   /* padding: 40px; */
 }
 
 .certification-title,
-.certification-details div {
-  line-height: 56px;
+.certification-details p {
+  /* line-height: 56px; */
   font-style: normal;
   text-align: center;
   color: #ffffff;
 }
 
 .certification-title {
-  font-weight: bold;
-  font-size: 48px;
+  font-weight: 700;
+  font-size: 38px;
 }
 
-.certification-details div {
-  font-weight: 200;
-  font-size: 40px;
+.certification-details p {
+  font-weight: 100;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 1150px) {

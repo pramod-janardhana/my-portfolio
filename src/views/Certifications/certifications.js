@@ -2,8 +2,8 @@ import React from "react";
 import { Flex } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 
-import Certificate from "../components/Certificate";
-import "./Certifications.css";
+import Certificate from "./components/Certificate";
+import "./certifications.css";
 
 function Certifications() {
   const certificates = [
