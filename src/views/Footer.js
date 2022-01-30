@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex } from "@chakra-ui/layout";
+import { Flex, Divider } from "@chakra-ui/react";
 import FooterSocialLinks from "../components/FooterSocialLinks";
 import FooterNavBar from "../components/FooterNavBar";
 import FooterSignature from "../components/FooterSignature";
@@ -10,7 +10,7 @@ function Footer() {
     <Flex id="footer">
       <FooterSocialLinks />
       <FooterNavBar />
-      <hr />
+      <Divider h="2px" />
       <FooterSignature />
     </Flex>
   );

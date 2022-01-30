@@ -15,7 +15,7 @@ const FooterNavBar = () => {
         offset={-70}
         duration={1000}
       >
-        PRAMOD J
+        About
       </Link>
       <Link
         className="footer-nav-link"
@@ -26,7 +26,7 @@ const FooterNavBar = () => {
         offset={-70}
         duration={1000}
       >
-        SKILLS
+        Skills
       </Link>
       <Link
         className="footer-nav-link"
@@ -37,7 +37,7 @@ const FooterNavBar = () => {
         offset={-70}
         duration={1000}
       >
-        EXPERIENCE
+        Experience
       </Link>
       <Link
         className="footer-nav-link"
@@ -48,7 +48,7 @@ const FooterNavBar = () => {
         offset={-70}
         duration={1000}
       >
-        PROJECTS
+        Projects
       </Link>
       <Link
         className="footer-nav-link"
@@ -59,7 +59,7 @@ const FooterNavBar = () => {
         offset={-70}
         duration={1000}
       >
-        CERTIFICATIONS
+        Certifications
       </Link>
     </Flex>
   );
