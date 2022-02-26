@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import LoadingScreen from "react-loading-screen";
-import firebaseDB from "../firebase";
-import profile from "../drawables/about/profile.svg";
-import code from "../drawables/about/code.svg";
-import github from "../drawables/about/github.svg";
-import linkedin from "../drawables/about/linkedin.svg";
-import "./About.css";
+import firebaseDB from "../../firebase";
+import profile from "../../drawables/about/profile.svg";
+import code from "../../drawables/about/code.svg";
+import github from "../../drawables/about/github.svg";
+import linkedin from "../../drawables/about/linkedin.svg";
+import "./about.css";
 import { Box, Flex } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 
@@ -23,8 +23,9 @@ function About() {
 
   return (
     <Flex id="about-section">
-      <Flex>
+      <Flex id="about-section-wrapper">
         <Image
+          id="profile-image"
           src={profile}
           height="458px"
           width="378px"
@@ -37,7 +38,7 @@ function About() {
             <p id="role">
               {role} AT <br />
               <span>
-                <a href="https://www.betsol.com/" target="_blank">
+                <a href="https://www.betsol.com/" target="_blank" rel="noreferrer">
                   {company}
                 </a>
               </span>
@@ -49,7 +50,6 @@ function About() {
                 <Image
                   className="icon"
                   src={item.src}
-                  boxSize="32px"
                   alt={item.alt}
                 />
               ))}
