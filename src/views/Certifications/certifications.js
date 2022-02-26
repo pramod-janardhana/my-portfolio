@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 
 import Certificate from "./components/Certificate";
@@ -32,7 +32,7 @@ function Certifications() {
     <>
       <Flex id="certifications-head">
         <Element name="certificates" />
-        <div id="certifications-title">CERTIFICATIONS</div>
+        <Text id="certifications-title" noOfLines={[1, 2, 3]}>CERTIFICATIONS</Text >
       </Flex>
       <Flex id="certifications-body">{myCertificates}</Flex>
     </>
