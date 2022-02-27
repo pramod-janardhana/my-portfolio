@@ -38,6 +38,29 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "frontend backend"
+    "devops backend";
+}
+
+#frontend-skills {
+  grid-area: frontend;
+  /* grid-column: span 1 / span 1;
+  grid-row: span 1 / span 1; */
+}
+
+#backend-skills {
+  grid-area: backend;
+  /* grid-column: span 1 / span 1;
+  grid-row: span 1 / span 2; */
+}
+
+#devops-skills {
+  grid-area: devops;
+  /* grid-row: span 2 / span 2;
+  grid-column: span 1 / span 1; */
 }
 
 @media screen and (max-width: 1150px) {
@@ -48,7 +71,8 @@
 
 @media screen and (max-width: 950px) {
   #skills-body {
-    padding: 4vw;
+    padding: 1.2vw;
+    /* padding: 4vw; */
   }
 
   #skills-head {
@@ -70,7 +94,8 @@
 
 @media screen and (max-width: 750px) {
   #skills-body {
-    padding: 4vw;
+    padding: 1.2vw;
+    /* padding: 4vw; */
   }
 
   #skills-head {
@@ -88,11 +113,38 @@
     font-size: 16px;
     line-height: 25px;
   }
+
+  #skills-body {
+    /* padding: 1.2vw; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "frontend devops"
+      "backend backend";
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   #skills-body {
-    padding: 4vw;
+    /* padding: 1.2vw; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "frontend"
+      "devops"
+      "backend";
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #skills-body {
+    /* padding: 4vw; */
   }
 
   #skills-head {
@@ -109,5 +161,18 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+  }
+
+  #skills-body {
+    /* padding: 1.2vw; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "frontend"
+      "devops"
+      "backend";
   }
 }

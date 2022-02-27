@@ -11,16 +11,18 @@ const Card = ({ title, skills }) => {
         {title}
       </Box>
       <Grid
+        className="card-grid"
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(2, 1fr)"
-        gap={4}
+        gap="4px"
       >
         {skills.map((skill) => (
           <GridItem
+            className="my-skill"
             bg={colors.white}
-            fontFamily="Courgette"
-            fontSize="32px"
-            lineHeight="40px"
+            // fontFamily="Courgette"
+            // fontSize="32px"
+            // lineHeight="40px"
           >
             {skill}
           </GridItem>
