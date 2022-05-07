@@ -18,6 +18,23 @@ import "./TopNavBar.css";
 const TopNavBar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    if (window.pageYOffset > 100) {
+      document.getElementById("top-nav").style.height = "80px";
+    } else {
+      document.getElementById("top-nav").style.height = "100px";
+    }
+
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("top-nav").style.top = "0";
+    } else {
+      document.getElementById("top-nav").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   return (
     <Flex id="top-nav">
       <Link
