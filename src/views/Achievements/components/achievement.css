@@ -1,0 +1,53 @@
+.achievement {
+  align-items: center;
+  text-align: center;
+  /* background-color: #000000; */
+  border: 1px solid #ffffff;
+  /*width: 24%;
+  margin: 40px;*/
+  width: 100%;
+  padding: 2.4vw; 
+}
+
+@media screen and (max-width: 1150px) {
+  .achievement p{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .achievement p{
+    font-size: 24px
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .achievement p{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .achievement p{
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .achievement p{
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .achievement-title {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .achievement-details div {
+    line-height: 24px;
+    font-size: 14em;
+  }
+}

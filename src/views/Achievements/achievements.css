@@ -1,0 +1,82 @@
+#achievements-head {
+  padding: 40px;
+  margin: 1.2vw 0 1.2vw 0;
+  /* height: 250px; */
+  justify-content: center;
+  align-items: center;
+  background-color: #BCDCFB;
+  border-top: 0.8vw solid #0E74D8;
+  border-bottom: 0.8vw solid #0E74D8;
+}
+
+#achievements-title {
+  font-family: Monoton;
+  font-style: normal;
+  font-size: 110px;
+  text-align: center;
+  line-height: 210px;
+  color: #ffffff;
+}
+
+#achievements-body {
+  /* padding: 0 2.4vw 2.4vw 2.4vw; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E74D8;
+}
+
+@media screen and (max-width: 1150px) {
+  #achievements-title {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #achievements-head {
+    padding: 10px;
+    height: 190px;
+  }
+
+  #achievements-title {
+    font-size: 82px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #achievements-head {
+    padding: 10px;
+    height: 142px;
+  }
+
+  #achievements-title {
+    font-size: 52px;
+    line-height: 90px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #achievements-head {
+    border-top: 1.2vw solid #0E74D8;
+    border-bottom: 1.2vw solid #0E74D8;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #achievements-head {
+    padding: 10px;
+    height: 106px;
+  }
+
+  #achievements-title {
+    font-size: 44px;
+    line-height: 68px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #achievements-title {
+    font-size: 36px;
+    line-height: 68px;
+  }
+}
