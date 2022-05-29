@@ -1,11 +1,11 @@
 import React from "react";
 import { Flex, Text } from "@chakra-ui/layout";
 import ReactRoundedImage from "react-rounded-image";
-import logo from "../../../drawables/experience/company-logo.svg";
+import logo from "../../../drawables/experience/betsol-logo.svg";
 import colors from "../consts";
 import "./Fulltime.css";
 
-const Fulltime = () => {
+const Fulltime = ({fulltime}) => {
   return (
     <>
       <Flex className="fulltime">
@@ -23,21 +23,21 @@ const Fulltime = () => {
             fontFamily="Bungee"
             color={colors.white}
           >
-            BETSOL
+            {fulltime.companyName}
           </Text>
           <Text
             className="role-at-fulltime"
             fontFamily="Patrick Hand"
             color={colors.white}
           >
-            Software Engineer Intern
+            {fulltime.role}
           </Text>
           <Text
             className="fulltime-duration"
             fontFamily="Patrick Hand"
             color={colors.white}
           >
-            Mar 2021 – Jun 2021
+            {fulltime.duration.start} – {fulltime.duration.end}
           </Text>
         </Flex>
       </Flex>

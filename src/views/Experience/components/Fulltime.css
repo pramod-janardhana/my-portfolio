@@ -7,7 +7,7 @@
 }
 
 .fulltime-details {
-  padding: 2.4vw;
+  padding: 36px;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 32px;
@@ -38,44 +38,80 @@
   margin: auto;
 }
 
+@media screen and (max-width: 1150px) {
+  .fulltime-company-name {
+    font-size: 34px;
+  }
+
+  .fulltime-details {
+    padding: 32px;
+  }
+
+  .role-at-fulltime,
+  .fulltime-duration {
+    font-size: 28px;
+  }
+}
+
 @media screen and (max-width: 950px) {
-  .fulltime {
-    margin-top: 3vw;
+  .fulltime-company-name {
+    font-size: 30px;
+  }
+
+  .fulltime-details {
+    padding: 30px;
+  }
+
+  .role-at-fulltime,
+  .fulltime-duration {
+    font-size: 26px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .fulltime {
-    margin-top: 0;
-    padding: 2vw;
-  }
-
-  .fulltime-company-logo {
-    display: none;
+  .fulltime-company-name {
+    font-size: 26px;
   }
 
   .fulltime-details {
-    padding-left: 0px;
+    border-radius: 28px;
+    padding: 26px;
   }
 
-  .fulltime-company-name,
   .role-at-fulltime,
   .fulltime-duration {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .fulltime {
-    margin-top: 0;
-    padding: 2vw;
+  .fulltime-company-name {
+    font-size: 20px;
   }
 
-  .fulltime-company-name,
+  .fulltime-details {
+    border-radius: 26px;
+    padding: 24px;
+  }
+
   .role-at-fulltime,
   .fulltime-duration {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .fulltime-company-name {
+    font-size: 18px;
+  }
+
+  .fulltime-details {
+    border-radius: 18px;
+    padding: 20px;
+  }
+
+  .role-at-fulltime,
+  .fulltime-duration {
+    font-size: 14px;
   }
 }
