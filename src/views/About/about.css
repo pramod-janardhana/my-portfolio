@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 610px;
+  margin-top: 100px;
 }
 
 #my-details {
@@ -174,7 +175,7 @@
     height: 56px;
     width: 123px;
   }
-  
+
   #quote p {
     font-size: 0.6em;
   }
@@ -183,7 +184,6 @@
     width: 24px;
     height: 24px;
   }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -221,10 +221,10 @@
     width: 103px;
     margin-left: 4px;
   }
-  
+
   #quote p {
-  line-height: 12px;
-  font-size: 0.6em;
+    line-height: 12px;
+    font-size: 0.6em;
   }
 
   .icon {
@@ -232,7 +232,6 @@
     height: 24px;
     margin: 6px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -290,10 +289,10 @@
     width: 103px;
     margin-left: 4px;
   }
-  
+
   #quote p {
-  line-height: 12px;
-  font-size: 0.6em;
+    line-height: 12px;
+    font-size: 0.6em;
   }
 
   .icon {
@@ -301,7 +300,6 @@
     height: 24px;
     margin: 6px;
   }
-
 }
 
 @media screen and (max-width: 320px) {

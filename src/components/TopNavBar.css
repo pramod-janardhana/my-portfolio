@@ -1,13 +1,14 @@
 #top-nav {
   position: fixed;
   height: 100px;
+  top: 0;
   width: 96.6vw;
   padding: 0 5vw 0 5vw;
   overflow: hidden;
   align-items: end;
   justify-content: space-between;
   background-color: #ffffff;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
 }
 
 #logo,

@@ -32,7 +32,9 @@ function Certifications() {
     <>
       <Flex id="certifications-head">
         <Element name="certificates" />
-        <Text id="certifications-title" noOfLines={[1, 2, 3]}>CERTIFICATIONS</Text >
+        <Text id="certifications-title" noOfLines={[1, 2, 3]}>
+          CERTIFICATIONS
+        </Text>
       </Flex>
       <Flex id="certifications-body">{myCertificates}</Flex>
     </>
