@@ -1,23 +1,27 @@
 #footer-signature {
-  padding: 2.4vw 2.4vw 0 2.4vw;
+  /* padding: 2.4vw 2.4vw 0 2.4vw; */
   align-items: center;
   font-style: normal;
   font-weight: 200;
   font-size: 1em;
   line-height: 33px;
   letter-spacing: 0.18em;
-  color: #000000;
+  font-family: Courgette;
+  color: #fff;
 }
 
 #footer-signature span a {
   text-decoration: none;
-  color: #000000;
   font-weight: 300;
+  font-family: Courgette;
+  color: #fff;
 }
 
 #footer-signature span a:hover {
   cursor: pointer;
-  color: #ff0000;
+  opacity: 0.5;
+  transition: 0.2s;
+  /* color: #ff0000; */
 }
 
 @media screen and (max-width: 950px) {
