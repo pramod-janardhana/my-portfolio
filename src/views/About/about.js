@@ -16,9 +16,17 @@ function About() {
   const company = "Betsol";
 
   const socialLinks = [
-    { src: linkedin, alt: "linkedIn" },
-    { src: github, alt: "github" },
-    { src: code, alt: "code" },
+    {
+      src: linkedin,
+      alt: "linkedIn",
+      href: "https://www.linkedin.com/in/pramod-j-a039aa175/",
+    },
+    { src: github, alt: "github", href: "https://github.com/mr-pramod-98" },
+    {
+      src: code,
+      alt: "code",
+      href: "https://www.hackerrank.com/pramod_athreya_1",
+    },
   ];
 
   return (
@@ -38,7 +46,11 @@ function About() {
             <p id="role">
               {role} AT <br />
               <span>
-                <a href="https://www.betsol.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.betsol.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {company}
                 </a>
               </span>
@@ -47,11 +59,9 @@ function About() {
           <Flex id="social-links-wrapper">
             <Flex id="social-links">
               {socialLinks.map((item) => (
-                <Image
-                  className="icon"
-                  src={item.src}
-                  alt={item.alt}
-                />
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  <Image className="icon" src={item.src} alt={item.alt} />
+                </a>
               ))}
             </Flex>
             <Flex id="quote">
