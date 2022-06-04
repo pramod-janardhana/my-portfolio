@@ -3,7 +3,7 @@
   justify-content: center;
   /* align-items: center; */
   margin: 1.2vw 0vw 1.2vw 0vw;
-  padding: 30px;
+  padding: 40px;
   /* padding: 2.4vw; */
   height: 200px;
   background-color: #000;
@@ -30,6 +30,9 @@
 } */
 
 @media screen and (max-width: 1150px) {
+  #footer {
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 950px) {

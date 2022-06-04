@@ -95,8 +95,8 @@
 
 @media screen and (max-width: 500px) {
   .certification {
-    width: 62%;
-    margin: 10px;
+    width: 100%;
+    margin: 0 0 20px 0;
     padding: 20px;
   }
 
@@ -116,8 +116,6 @@
 
 @media screen and (max-width: 450px) {
   .certification {
-    width: 92%;
-    margin: 10px;
     padding: 10px;
   }
 
