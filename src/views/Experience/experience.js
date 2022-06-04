@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Flex, Box } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
 import firebaseDB, { storage } from "../../firebase";
 import ExperienceSectionHeader from "./components/ExperienceSectionHeader";
 import Internship from "./components/Internship";
@@ -36,7 +36,7 @@ function Experience() {
       duration: { start: "Jul 2021", end: "present" },
     },
   ];
-  const myfulltimes = fulltimes.map(fulltime => (
+  const myfulltimes = fulltimes.map((fulltime) => (
     <Fulltime fulltime={fulltime} />
   ));
 
@@ -60,20 +60,22 @@ function Experience() {
       duration: { start: "Jab 2020", end: "Jun 2020" },
     },
   ];
-  const myInternships = internships.map(internship => (
+  const myInternships = internships.map((internship) => (
     <Internship internship={internship} />
   ));
 
   return (
     <>
       <Flex id="experience-head">
-        <div id="experience-title">EXPERIENCE</div>
+        <Text id="experience-title" noOfLines={[1, 2, 3]}>
+          EXPERIENCE
+        </Text>
       </Flex>
       <Box id="experience-body" bg={colors.lightPurpul}>
         <div>
-          <ExperienceSectionHeader title="INTERNSHIP" />
+          <ExperienceSectionHeader title="Internships" />
           <Flex id="internship-body">
-            <img src={sideImage} id="side-image" alt="side"/>
+            <img src={sideImage} id="side-image" alt="side" />
             <Flex id="internships">{myInternships}</Flex>
             {/* <Flex id="internships">
               {internships.map((internship) => (
@@ -83,10 +85,8 @@ function Experience() {
           </Flex>
         </div>
         <div>
-          <ExperienceSectionHeader title="FULLTIME" />
-          <Flex id="full-time-body">
-            {myfulltimes}
-          </Flex>
+          <ExperienceSectionHeader title="Fultime" />
+          <Flex id="full-time-body">{myfulltimes}</Flex>
         </div>
       </Box>
     </>

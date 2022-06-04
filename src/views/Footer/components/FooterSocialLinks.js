@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, Spacer } from "@chakra-ui/layout";
-import githubLogo from "../drawables/footer/github_logo.svg";
-import linkedLogo from "../drawables/footer/linkedin_logo.svg";
-import codeLogo from "../drawables/footer/code_logo.svg";
+import githubLogo from "../../../drawables/footer/github_logo.svg";
+import linkedLogo from "../../../drawables/footer/linkedin_logo.svg";
+import codeLogo from "../../../drawables/footer/code_logo.svg";
 import "./FooterSocialLinks.css";
 
 const FooterSocialLinks = () => {
