@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Divider, Box } from "@chakra-ui/react";
 import FooterSocialLinks from "./components/FooterSocialLinks";
-import FooterNavBar from "../../components/FooterNavBar";
+import FooterNavBar from "./components/FooterNavBar";
 import FooterSignature from "./components/FooterSignature";
 import "./footer.css";
 

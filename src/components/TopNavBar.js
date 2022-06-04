@@ -1,29 +1,31 @@
 import React from "react";
 import { Link } from "react-scroll";
-import {
-  Flex,
-  Box,
-  Menu,
-  MenuButton,
-  Portal,
-  MenuList,
-  MenuItem,
-  IconButton,
-  useDisclosure,
-} from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Flex, Box } from "@chakra-ui/react";
 import NavItems from "./NavItems";
+import MyDrawer from "./Drawer";
 import "./TopNavBar.css";
 
 const TopNavBar = () => {
-  const { isOpen, onToggle } = useDisclosure();
-
   var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    if (window.pageYOffset > 100) {
-      document.getElementById("top-nav").style.height = "80px";
+  window.onresize = () => {
+    if (window.screen.width <= 750) {
+      document.getElementById("top-nav").style.height = "60px";
     } else {
-      document.getElementById("top-nav").style.height = "100px";
+      if (window.pageYOffset > 100) {
+        document.getElementById("top-nav").style.height = "80px";
+      } else {
+        document.getElementById("top-nav").style.height = "100px";
+      }
+    }
+  };
+
+  window.onscroll = function () {
+    if (window.screen.width > 750) {
+      if (window.pageYOffset > 100) {
+        document.getElementById("top-nav").style.height = "80px";
+      } else {
+        document.getElementById("top-nav").style.height = "100px";
+      }
     }
 
     var currentScrollPos = window.pageYOffset;
@@ -45,9 +47,6 @@ const TopNavBar = () => {
         smooth={true}
         offset={-70}
         duration={1000}
-        onClick={() => {
-          if (isOpen) onToggle();
-        }}
       >
         Pramod
       </Link>
@@ -66,47 +65,7 @@ const TopNavBar = () => {
           </Link>
         ))}
       </Box>
-      <Box id="hamburger-menu">
-        <Menu closeOnSelect={false} isOpen={isOpen}>
-          <MenuButton
-            mr="4vw"
-            as={IconButton}
-            icon={<HamburgerIcon color="white" boxSize="2em" />}
-            border="none"
-            w="30px"
-            h="30px"
-            bg="inherit"
-            onClick={onToggle}
-          />
-          <Portal>
-            <MenuList w="98vw" padding="1vw">
-              {NavItems.map((item) => (
-                <MenuItem
-                  border="none"
-                  padding="1vw"
-                  alignItems="center"
-                  justifyContent="center"
-                  bg="#000"
-                  opacity="0.95"
-                >
-                  <Link
-                    className="hamburger-nav-link"
-                    activeClass={item.activeClass}
-                    to={item.to}
-                    spy={item.spy}
-                    smooth={item.smooth}
-                    offset={item.offset}
-                    duration={item.duration}
-                    onClick={onToggle}
-                  >
-                    {item.text}
-                  </Link>
-                </MenuItem>
-              ))}
-            </MenuList>
-          </Portal>
-        </Menu>
-      </Box>
+      <MyDrawer />
     </Flex>
   );
 };
