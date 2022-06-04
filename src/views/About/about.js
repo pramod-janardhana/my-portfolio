@@ -21,7 +21,11 @@ function About() {
       alt: "linkedIn",
       href: "https://www.linkedin.com/in/pramod-j-a039aa175/",
     },
-    { src: github, alt: "github", href: "https://github.com/mr-pramod-98" },
+    {
+      src: github,
+      alt: "github",
+      href: "https://github.com/pramod-janardhana",
+    },
     {
       src: code,
       alt: "code",

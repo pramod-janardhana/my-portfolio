@@ -9,7 +9,7 @@ const FooterSocialLinks = () => {
   return (
     <Flex id="footer-social-links">
       <a
-        href="https://github.com/mr-pramod-98"
+        href="https://github.com/pramod-janardhana"
         target="_blank"
         rel="noreferrer"
       >
