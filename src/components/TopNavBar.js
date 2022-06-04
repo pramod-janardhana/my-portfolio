@@ -6,7 +6,6 @@ import MyDrawer from "./Drawer";
 import "./TopNavBar.css";
 
 const TopNavBar = () => {
-  var prevScrollpos = window.pageYOffset;
   window.onresize = () => {
     if (window.screen.width <= 750) {
       document.getElementById("top-nav").style.height = "60px";
@@ -19,6 +18,7 @@ const TopNavBar = () => {
     }
   };
 
+  var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     if (window.screen.width > 750) {
       if (window.pageYOffset > 100) {

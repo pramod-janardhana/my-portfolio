@@ -4,9 +4,9 @@
   /* height: 250px; */
   justify-content: center;
   align-items: center;
-  background-color: #BCDCFB;
-  border-top: 0.8vw solid #0E74D8;
-  border-bottom: 0.8vw solid #0E74D8;
+  background-color: #bcdcfb;
+  border-top: 0.8vw solid #0e74d8;
+  border-bottom: 0.8vw solid #0e74d8;
 }
 
 #achievements-title {
@@ -14,7 +14,7 @@
   font-style: normal;
   font-size: 110px;
   text-align: center;
-  line-height: 210px;
+  line-height: 180px;
   color: #ffffff;
 }
 
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0E74D8;
+  background-color: #0e74d8;
 }
 
 @media screen and (max-width: 1150px) {
@@ -47,6 +47,8 @@
   #achievements-head {
     padding: 10px;
     height: 142px;
+    border-top: 1vw solid #0e74d8;
+    border-bottom: 1vw solid #0e74d8;
   }
 
   #achievements-title {
@@ -57,8 +59,8 @@
 
 @media screen and (max-width: 500px) {
   #achievements-head {
-    border-top: 1.2vw solid #0E74D8;
-    border-bottom: 1.2vw solid #0E74D8;
+    border-top: 1.2vw solid #0e74d8;
+    border-bottom: 1.2vw solid #0e74d8;
   }
 }
 
@@ -66,6 +68,8 @@
   #achievements-head {
     padding: 10px;
     height: 106px;
+    border-top: 1.6vw solid #0e74d8;
+    border-bottom: 1.6vw solid #0e74d8;
   }
 
   #achievements-title {

@@ -24,8 +24,8 @@ const NavItems = [
     ...smoothScrollOptions,
   },
   {
-    to: "certifications-head",
-    text: "Projects",
+    to: "achievements-head",
+    text: "Achievements",
     icon: achivementIcon,
     ...smoothScrollOptions,
   },
