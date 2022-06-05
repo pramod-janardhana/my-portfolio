@@ -20,6 +20,12 @@ const MyDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const placement = "right";
 
+  window.onresize = () => {
+    if (window.innerWidth > 750) {
+      onClose();
+    }
+  };
+
   return (
     <>
       <Button

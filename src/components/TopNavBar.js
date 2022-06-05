@@ -7,7 +7,7 @@ import "./TopNavBar.css";
 
 const TopNavBar = () => {
   window.onresize = () => {
-    if (window.screen.width <= 750) {
+    if (window.innerWidth <= 750) {
       document.getElementById("top-nav").style.height = "60px";
     } else {
       if (window.pageYOffset > 100) {
@@ -20,7 +20,7 @@ const TopNavBar = () => {
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    if (window.screen.width > 750) {
+    if (window.innerWidth > 750) {
       if (window.pageYOffset > 100) {
         document.getElementById("top-nav").style.height = "80px";
       } else {
