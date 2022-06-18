@@ -57,7 +57,7 @@ function Experience() {
       companyName: "Smart Desert",
       companyLogo: smartDesertLogo,
       role: "Mobile Application Developer Intern",
-      duration: { start: "Jab 2020", end: "Jun 2020" },
+      duration: { start: "Jan 2020", end: "Jun 2020" },
     },
   ];
   const myInternships = internships.map((internship) => (
