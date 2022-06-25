@@ -20,21 +20,23 @@ const Fulltime = ({fulltime}) => {
         <Flex className="fulltime-details" bg={colors.darkPink}>
           <Text
             className="fulltime-company-name"
-            fontFamily="Bungee"
+            fontFamily="Ubuntu"
+            fontWeight="700"
             color={colors.white}
+            letterSpacing="1px"
           >
             {fulltime.companyName}
           </Text>
           <Text
             className="role-at-fulltime"
-            fontFamily="Patrick Hand"
+            fontFamily="Ubuntu"
             color={colors.white}
           >
             {fulltime.role}
           </Text>
           <Text
             className="fulltime-duration"
-            fontFamily="Patrick Hand"
+            fontFamily="Ubuntu"
             color={colors.white}
           >
             {fulltime.duration.start} – {fulltime.duration.end}
