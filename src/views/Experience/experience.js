@@ -73,20 +73,15 @@ function Experience() {
       </Flex>
       <Box id="experience-body" bg={colors.lightPurpul}>
         <div>
+          <ExperienceSectionHeader title="Fultime" />
+          <Flex id="full-time-body">{myfulltimes}</Flex>
+        </div>
+        <div>
           <ExperienceSectionHeader title="Internships" />
           <Flex id="internship-body">
             <img src={sideImage} id="side-image" alt="side" />
             <Flex id="internships">{myInternships}</Flex>
-            {/* <Flex id="internships">
-              {internships.map((internship) => (
-                <Internship internship={internship} />
-              ))}
-            </Flex> */}
           </Flex>
-        </div>
-        <div>
-          <ExperienceSectionHeader title="Fultime" />
-          <Flex id="full-time-body">{myfulltimes}</Flex>
         </div>
       </Box>
     </>

@@ -1,52 +1,40 @@
 .fulltime {
-  /* padding: 20px; */
-  /* margin-top: 40px; */
+  padding: 28px;
   flex-direction: row;
   justify-content: center;
+  border-radius: 12px;
   align-items: center;
 }
 
 .fulltime-details {
-  padding: 36px;
+  padding-left: 20px;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 32px;
 }
 
-.fulltime-company-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  /* line-height: 37px; */
-  /* color: #217c9d; */
-}
-
+.fulltime-company-name,
 .role-at-fulltime,
 .fulltime-duration {
   font-style: normal;
   font-weight: 200;
   font-size: 32px;
-  /* line-height: 37px; */
-  /* color: #000000; */
+  line-height: 37px;
 }
 
-.fulltime-item-dividor {
-  height: 1px;
-  background-color: #928b8b;
-  border: 0;
-  width: 80%;
-  margin: auto;
+.fulltime-company-name {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1150px) {
-  .fulltime-company-name {
-    font-size: 34px;
+  .fulltime {
+    padding: 20px;
   }
 
   .fulltime-details {
-    padding: 32px;
+    padding: 20px;
   }
 
+  .fulltime-company-name,
   .role-at-fulltime,
   .fulltime-duration {
     font-size: 28px;
@@ -54,64 +42,67 @@
 }
 
 @media screen and (max-width: 950px) {
-  .fulltime-company-name {
-    font-size: 30px;
+  .fulltime {
+    padding: 16px;
+    border-radius: 10px;
   }
 
-  .fulltime-details {
-    padding: 30px;
+  .fulltime-company-logo {
+    width: 112px;
+    height: 112px;
   }
 
+  .fulltime-company-name,
   .role-at-fulltime,
   .fulltime-duration {
-    font-size: 26px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .fulltime-company-name {
-    font-size: 26px;
+  .fulltime {
+    border-radius: 8px;
   }
 
-  .fulltime-details {
-    border-radius: 28px;
-    padding: 26px;
+  .fulltime-company-logo {
+    width: 92px;
+    height: 92px;
   }
 
+  .fulltime-company-name,
   .role-at-fulltime,
   .fulltime-duration {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .fulltime-company-name {
-    font-size: 20px;
+  .fulltime-company-logo {
+    width: 82px;
+    height: 82px;
   }
 
   .fulltime-details {
-    border-radius: 26px;
-    padding: 24px;
-  }
-
-  .role-at-fulltime,
-  .fulltime-duration {
-    font-size: 20px;
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .fulltime-company-name {
-    font-size: 18px;
+  .fulltime {
+    padding: 12px;
   }
 
-  .fulltime-details {
-    border-radius: 18px;
-    padding: 20px;
+  .fulltime-company-logo {
+    width: 62px;
+    height: 62px;
   }
 
+  .fulltime-company-name,
   .role-at-fulltime,
   .fulltime-duration {
+    line-height: 18px;
     font-size: 14px;
   }
 }

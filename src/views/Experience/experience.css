@@ -38,8 +38,8 @@
 
 /*FULLTIME SECTION*/
 #full-time-body {
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1150px) {
