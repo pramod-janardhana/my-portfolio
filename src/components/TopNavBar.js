@@ -1,41 +1,47 @@
 import React from "react";
+import { Image } from "@chakra-ui/image";
 import { Link } from "react-scroll";
 import { Flex, Box } from "@chakra-ui/react";
 import NavItems from "./NavItems";
 import MyDrawer from "./Drawer";
+import Logo from "../drawables/navbar/logo.svg";
 import "./TopNavBar.css";
 
 const TopNavBar = () => {
-  window.onresize = () => {
-    if (window.innerWidth <= 750) {
-      document.getElementById("top-nav").style.height = "60px";
-    } else {
-      if (window.pageYOffset > 100) {
-        document.getElementById("top-nav").style.height = "80px";
+  try {
+    window.onresize = () => {
+      if (window.innerWidth <= 750) {
+        document.getElementById("top-nav").style.height = "60px";
       } else {
-        document.getElementById("top-nav").style.height = "100px";
+        if (window.pageYOffset > 100) {
+          document.getElementById("top-nav").style.height = "80px";
+        } else {
+          document.getElementById("top-nav").style.height = "100px";
+        }
       }
-    }
-  };
+    };
 
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    if (window.innerWidth > 750) {
-      if (window.pageYOffset > 100) {
-        document.getElementById("top-nav").style.height = "80px";
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      if (window.innerWidth > 750) {
+        if (window.pageYOffset > 100) {
+          document.getElementById("top-nav").style.height = "80px";
+        } else {
+          document.getElementById("top-nav").style.height = "100px";
+        }
+      }
+
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("top-nav").style.top = "0";
       } else {
-        document.getElementById("top-nav").style.height = "100px";
+        document.getElementById("top-nav").style.top = "-100px";
       }
-    }
-
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("top-nav").style.top = "0";
-    } else {
-      document.getElementById("top-nav").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-  };
+      prevScrollpos = currentScrollPos;
+    };
+  } catch (e) {
+    console.log("error loading component");
+  }
 
   return (
     <Flex id="top-nav">
@@ -48,9 +54,15 @@ const TopNavBar = () => {
         offset={-70}
         duration={1000}
       >
+        <img id="logo-icon" src={Logo} alt="logo" />
         Pramod
       </Link>
-      <Box id="horizontal-menu">
+      <Flex
+        id="horizontal-menu"
+        flexDirection="row"
+        alignItems="center"
+        justifyContent="center"
+      >
         {NavItems.map((item) => (
           <Link
             className="top-nav-link"
@@ -64,7 +76,7 @@ const TopNavBar = () => {
             {item.text}
           </Link>
         ))}
-      </Box>
+      </Flex>
       <MyDrawer />
     </Flex>
   );

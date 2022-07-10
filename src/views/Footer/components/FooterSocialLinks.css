@@ -6,8 +6,8 @@
   /* margin-top: 1.2vw; */
 }
 
-#logo_spacer {
-  width: 60px;
+.logo_spacer {
+  width: 30px;
 }
 
 #footer-social-links img {
@@ -43,12 +43,12 @@
     width: 24px;
   }
 
-  #logo_spacer {
-    width: 40px;
+  .logo_spacer {
+    width: 20px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   #footer-social-links {
     /* margin-top: 2vw; */
   }
@@ -58,8 +58,8 @@
     height: 20px;
   }
 
-  #logo_spacer {
-    width: 32px;
+  .logo_spacer {
+    width: 14px;
   }
 }
 

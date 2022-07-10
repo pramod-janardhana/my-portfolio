@@ -20,9 +20,10 @@
 
 #footer-signature span a:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
+  text-decoration: underline;
   transition: 0.2s;
-  /* color: #ff0000; */
+  /* color: #7c0404; */
 }
 
 @media screen and (max-width: 950px) {
