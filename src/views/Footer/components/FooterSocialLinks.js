@@ -26,7 +26,7 @@ const socialLinks = [
   {
     src: resumeLogo,
     alt: "resume",
-    href: "https://drive.google.com/file/d/1F-zREWdTKMGf4zEh6EY3r-yV5WoFwu3_/view",
+    href: "https://drive.google.com/file/d/1dVlNzUdl1S2O9p1g7OQtEdm-zh0x0mMH/view",
   },
 ];
 
