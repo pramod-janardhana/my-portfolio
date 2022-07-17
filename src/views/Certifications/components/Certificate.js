@@ -8,19 +8,19 @@ const Certification = ({ myCertificate }) => {
     <Flex className="certification">
       <Text
         className="certification-title"
-        fontFamily="Roboto"
+        fontFamily="Ubuntu"
         color={colors.white}
       >
         {myCertificate.title}
       </Text>
       <Flex className="certification-details">
-        <Text fontFamily="Roboto" color={colors.white}>
+        <Text fontFamily="Ubuntu" color={colors.white}>
           {myCertificate.details.duration}
         </Text>
-        <Text fontFamily="Roboto" color={colors.white}>
+        <Text fontFamily="Ubuntu" color={colors.white}>
           {myCertificate.details.provider}
         </Text>
-        <Text fontFamily="Roboto" color={colors.white}>
+        <Text fontFamily="Ubuntu" color={colors.white}>
           {myCertificate.details.score}
         </Text>
       </Flex>

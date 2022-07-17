@@ -7,7 +7,7 @@ const Achievement = ({ myAchievement }) => {
   return (
     <Box className="achievement">
       <Text
-        fontFamily="Roboto"
+        fontFamily="Ubuntu"
         fontSize="26px"
         fontWeight="300"
         color={colors.white}

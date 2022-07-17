@@ -19,7 +19,7 @@ const Card = ({ title, skills }) => {
         {skills.map((skill) => (
           <GridItem
             className="my-skill"
-            bg={colors.white}
+            color={colors.blue}
             // fontFamily="Courgette"
             // fontSize="32px"
             // lineHeight="40px"
