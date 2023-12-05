@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Flex, Box, Text } from "@chakra-ui/react";
-import firebaseDB, { storage } from "../../firebase";
 import ExperienceSectionHeader from "./components/ExperienceSectionHeader";
 import Internship from "./components/Internship";
 import betsolLogo from "../../drawables/experience/betsol-logo.svg";
@@ -12,27 +11,11 @@ import colors from "./consts";
 import "./experience.css";
 
 function Experience() {
-  // const [internships, setInternships] = useState([]);
-  // useEffect(() => {
-  //   const spaceRef = storage.ref("company-logo.svg");
-  //   console.log({ spaceRef });
-  //   spaceRef.getDownloadURL().then((url) => console.log({ url }));
-
-  //   firebaseDB.child("experience").on("value", (snapshot) => {
-  //     const result = snapshot.val();
-  //     if (result != null) {
-  //       console.log(result.internships[0], result.internships.length);
-  //       setInternships([...result.internships, internships]);
-  //       setInternships([...result.internships, internships]);
-  //       setInternships([...result.internships, internships]);
-  //     }
-  //   });
-  // }, []);
   const fulltimes = [
     {
       companyName: "BETSOL",
       companyLogo: betsolLogo,
-      role: "Associate Software Engineer",
+      role: "Software Engineer",
       duration: { start: "Jul 2021", end: "present" },
     },
   ];

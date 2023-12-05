@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import LoadingScreen from "react-loading-screen";
-import firebaseDB from "../../firebase";
 import profile from "../../drawables/about/profile.svg";
 import code from "../../drawables/about/code.svg";
 import github from "../../drawables/about/github.svg";
@@ -12,7 +10,6 @@ import { Box, Flex } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 
 function About() {
-  const [loading, setLoading] = useState(true);
   const name = "Pramod Janardhana";
   const role = "Full Stack Developer";
   const company = "Betsol";
@@ -36,7 +33,7 @@ function About() {
     {
       src: resume,
       alt: "resume",
-      href: "https://drive.google.com/file/d/1dVlNzUdl1S2O9p1g7OQtEdm-zh0x0mMH/view",
+      href: "https://drive.google.com/file/d/1ioujrkC0UWxT-rmILsHTpfM7IxaI6oY6/view",
     },
   ];
 

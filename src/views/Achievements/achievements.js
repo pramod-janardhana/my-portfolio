@@ -11,6 +11,7 @@ function Achievements() {
     <>{"Received"} <strong>{"2nd place"}</strong> {"in the Hackathon organized by"} <strong>{"BETSOL"}</strong></>,
     <>{"Received the"} <strong>{"Above and Beyond"}</strong> {"recognition from"} <strong>{"BETSOL"}</strong> {"in the first quarter of 2022"}</>,
     <>{"Received the"} <strong>{"Team Excellence Award"}</strong> {"from"} <strong>{"BETSOL"}</strong> {"in the first quarter of 2022"}</>,
+    <>{"Received the"} <strong>{"Above and Beyond"}</strong> {"recognition from"} <strong>{"BETSOL"}</strong> {"in the second quarter of 2023"}</>,
   ];
   const myAchievements = achievements.map((achievement) => (
     <Achievement myAchievement={achievement}/>
