@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Design tokens. RGB triplets so Tailwind can apply opacity modifiers. */
+/* Dark is the default; .light overrides on <html>.                     */
+/* ------------------------------------------------------------------ */
+:root {
+  --bg: 2 6 23; /* slate-950 */
+  --elev: 15 23 42; /* slate-900 */
+  --card: 17 25 46;
+  --line: 30 41 59; /* slate-800 */
+  --fg: 226 232 240; /* slate-200 */
+  --muted: 148 163 184; /* slate-400 */
+  --accent: 34 211 238; /* cyan-400 */
+  --accent-strong: 6 182 212; /* cyan-500 */
+  --success: 52 211 153; /* emerald-400 */
+  color-scheme: dark;
+}
+
+.light {
+  --bg: 255 255 255;
+  --elev: 248 250 252; /* slate-50 */
+  --card: 255 255 255;
+  --line: 226 232 240; /* slate-200 */
+  --fg: 15 23 42; /* slate-900 */
+  --muted: 71 85 105; /* slate-600 */
+  --accent: 8 145 178; /* cyan-600 */
+  --accent-strong: 14 116 144; /* cyan-700 */
+  --success: 5 150 105; /* emerald-600 */
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--fg));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Subtle dotted grid backdrop */
+.bg-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgb(var(--fg) / 0.05) 1px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-flow {
+    animation: none !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--line));
+  border-radius: 999px;
+}
+
