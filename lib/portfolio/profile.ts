@@ -11,11 +11,11 @@ export const profile = {
     version: "v3.0",
     updated: "Sep 2026",
     resumeUrl: "https://drive.google.com/file/d/1-pzW86CLyVREqCkPPTHhGMJBh9xyvV9f/view?usp=drive_link",
-    tldr: "Backend engineer who designs and ships reliable services in Go and Node.js. Currently a Senior Product Developer at Lumel, building on BI platform.",
+    tldr: "Backend engineer building distributed, high-performance data systems in Go and Node.js. Currently a Senior Product Developer and tech lead at Lumel.",
     abstract: [
-        "I'm a backend engineer with 5+ years building products and services in Go and Node.js. Today I'm a Senior Product Developer at Lumel, working on backend systems that run on BI platform like Fabric and PowerBI.",
-        "Before Lumel I spent three years at BETSOL, growing from trainee to Software Developer and shipping backend features across the product. I started out in fullstack development, which taught me to care about the whole product — not just the server.",
-        "I care about clean APIs, strong testing, and systems that are easy to operate and reason about.",
+        "I'm a backend engineer with 5+ years building production systems in Go and Node.js — focused on distributed services, data processing, concurrency, and performance. Today I'm a Senior Product Developer at Lumel, working on the data-processing engines behind its planning products on Power BI and Microsoft Fabric.",
+        "I also lead: I'm the tech lead for an 8-person team with 4 direct reports, spending a good part of my time on design reviews, mentoring, and turning ambiguous problems into reliable systems.",
+        "Before Lumel I spent three years at BETSOL, growing from trainee to Software Developer and building backend services for a SaaS backup-and-recovery platform. I started out in full-stack development, which taught me to care about the whole product — not just the server.",
     ],
     socials: {
         github: "https://github.com/pramod-janardhana",
