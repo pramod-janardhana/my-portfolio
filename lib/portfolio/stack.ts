@@ -13,12 +13,12 @@ export const stack: StackGroup[] = [
     },
     {
         category: "Data",
-        items: ["PostgreSQL", "SQLite", "DuckDB", "Redis", "Firebase/Firestore"],
-        note: "Storage & caching",
+        items: ["PostgreSQL", "MSSQL", "DuckDB", "SQLite", "Redis", "Apache Arrow", "Parquet", "Firebase/Firestore"],
+        note: "Storage & processing",
     },
     {
         category: "Platform & Cloud",
-        items: ["Kubernetes", "Docker", "AWS", "Git", "CI/CD", "Firebase"],
+        items: ["Kubernetes", "Docker", "AWS", "GCP", "Azure", "OneLake", "GitHub Actions", "CI/CD", "Git"],
         note: "Build, ship & run",
     },
 ];
