@@ -10,7 +10,7 @@ export const profile = {
     available: true,
     version: "v3.0",
     updated: "Sep 2026",
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "https://drive.google.com/file/d/1-pzW86CLyVREqCkPPTHhGMJBh9xyvV9f/view?usp=drive_link",
     tldr: "Backend engineer who designs and ships reliable services in Go and Node.js. Currently a Senior Product Developer at Lumel, building on BI platform.",
     abstract: [
         "I'm a backend engineer with 5+ years building products and services in Go and Node.js. Today I'm a Senior Product Developer at Lumel, working on backend systems that run on BI platform like Fabric and PowerBI.",
