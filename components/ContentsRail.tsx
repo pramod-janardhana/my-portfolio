@@ -31,9 +31,26 @@ export default function ContentsRail() {
       {/* Desktop sticky rail */}
       <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:py-12">
         <div>
-          <a href="#top" className="font-mono text-sm font-semibold text-fg">
-            {profile.first}
-            <span className="text-accent">.sys</span>
+          <a href="#top" className="inline-flex items-center gap-2 font-mono text-sm font-semibold text-fg">
+            {/* Logo tinted to currentColor via CSS mask so it adapts to the theme. */}
+            <span
+              aria-hidden
+              className="h-5 w-5 shrink-0 bg-current"
+              style={{
+                maskImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.png)`,
+                WebkitMaskImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.png)`,
+                maskSize: "contain",
+                WebkitMaskSize: "contain",
+                maskRepeat: "no-repeat",
+                WebkitMaskRepeat: "no-repeat",
+                maskPosition: "center",
+                WebkitMaskPosition: "center",
+              }}
+            />
+            <span>
+              {profile.first}
+              <span className="text-accent">.sys</span>
+            </span>
           </a>
           <p className="mt-1 font-mono text-xs text-muted">
             design doc · {profile.version}
@@ -90,9 +107,26 @@ export default function ContentsRail() {
 
       {/* Mobile top bar */}
       <div className="sticky top-0 z-40 flex items-center justify-between border-b border-line bg-bg/80 px-6 py-3 backdrop-blur-md lg:hidden">
-        <a href="#top" className="font-mono text-sm font-semibold text-fg">
-          {profile.first}
-          <span className="text-accent">.sys</span>
+        <a href="#top" className="inline-flex items-center gap-2 font-mono text-sm font-semibold text-fg">
+          {/* Logo tinted to currentColor via CSS mask so it adapts to the theme. */}
+          <span
+            aria-hidden
+            className="h-5 w-5 shrink-0 bg-current"
+            style={{
+              maskImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.png)`,
+              WebkitMaskImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.png)`,
+              maskSize: "contain",
+              WebkitMaskSize: "contain",
+              maskRepeat: "no-repeat",
+              WebkitMaskRepeat: "no-repeat",
+              maskPosition: "center",
+              WebkitMaskPosition: "center",
+            }}
+          />
+          <span>
+            {profile.first}
+            <span className="text-accent">.sys</span>
+          </span>
         </a>
         <div className="flex items-center gap-2">
           <ThemeToggle />
