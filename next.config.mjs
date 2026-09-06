@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-// Project site served under https://pramod-janardhana.github.io/profile/.
-const basePath = "/profile";
+// Project site served under https://pramod-janardhana.github.io/portfolio/.
+const basePath = "/portfolio";
 
 const nextConfig = {
   reactStrictMode: true,
