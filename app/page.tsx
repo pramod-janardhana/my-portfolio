@@ -67,12 +67,12 @@ export default function Home() {
               >
                 Read case studies
               </a>
-              <a
-                href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${profile.resumeUrl}`}
+              <ExternalLink
+                href={profile.resumeUrl}
                 className="rounded-md border border-line px-5 py-2.5 text-sm font-medium text-fg transition-colors hover:border-accent/50 hover:text-accent"
               >
                 Resume ↗
-              </a>
+              </ExternalLink>
               <a
                 href="#appendix"
                 className="rounded-md border border-line px-5 py-2.5 text-sm font-medium text-fg transition-colors hover:border-accent/50 hover:text-accent"
